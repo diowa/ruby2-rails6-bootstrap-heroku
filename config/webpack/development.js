@@ -25,7 +25,12 @@ const customConfig = {
     new StyleLintPlugin({
       files: '/app/**/*.(s(c|a)ss|css)'
     })
-  ]
+  ],
+  devServer: {
+    stats: {
+      colors: true
+    }
+  }
 }
 
 module.exports = merge(webpackConfig, customConfig)
